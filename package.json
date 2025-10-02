@@ -1,0 +1,25 @@
+{
+  "name": "css_cloning2",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Ange290/CSS_Cloning2#readme",
+  "bugs": {
+    "url": "https://github.com/Ange290/CSS_Cloning2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ange290/CSS_Cloning2.git"
+  },
+  "license": "ISC",
+  "author": "Ange UWIZERA",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {}
+}
