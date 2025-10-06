@@ -11,15 +11,8 @@
     --color-orange-100: oklch(95.4% 0.038 75.164);
     --color-orange-200: oklch(90.1% 0.076 70.697);
     --color-orange-300: oklch(83.7% 0.128 66.29);
-    --color-orange-950: oklch(26.6% 0.079 36.259);
-    --color-sky-400: oklch(74.6% 0.16 232.661);
-    --color-sky-500: oklch(68.5% 0.169 237.323);
-    --color-sky-600: oklch(58.8% 0.158 241.966);
-    --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-blue-600: oklch(54.6% 0.245 262.881);
-    --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-violet-500: oklch(60.6% 0.25 292.717);
     --color-violet-600: oklch(54.1% 0.281 293.009);
     --color-slate-50: oklch(98.4% 0.003 247.858);
@@ -50,8 +43,6 @@
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
@@ -446,8 +437,17 @@
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
   }
   .h-24 {
     height: calc(var(--spacing) * 24);
@@ -461,8 +461,20 @@
   .h-72 {
     height: calc(var(--spacing) * 72);
   }
+  .h-\[1vw\] {
+    height: 1vw;
+  }
   .h-\[8\.5rem\] {
     height: 8.5rem;
+  }
+  .h-\[10vw\] {
+    height: 10vw;
+  }
+  .h-\[13vw\] {
+    height: 13vw;
+  }
+  .h-\[15vw\] {
+    height: 15vw;
   }
   .h-\[20vw\] {
     height: 20vw;
@@ -470,14 +482,11 @@
   .h-\[21vw\] {
     height: 21vw;
   }
-  .h-\[54\.5vw\] {
-    height: 54.5vw;
+  .h-\[30vw\] {
+    height: 30vw;
   }
   .h-\[54vw\] {
     height: 54vw;
-  }
-  .h-\[54xvw\] {
-    height: 54xvw;
   }
   .h-auto {
     height: auto;
@@ -511,6 +520,21 @@
   }
   .w-72 {
     width: calc(var(--spacing) * 72);
+  }
+  .w-\[10vw\] {
+    width: 10vw;
+  }
+  .w-\[20\] {
+    width: 20;
+  }
+  .w-\[20vw\] {
+    width: 20vw;
+  }
+  .w-\[25vw\] {
+    width: 25vw;
+  }
+  .w-\[30vw\] {
+    width: 30vw;
   }
   .w-\[56vw\] {
     width: 56vw;
@@ -629,6 +653,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -637,9 +664,6 @@
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
-  }
-  .gap-17 {
-    gap: calc(var(--spacing) * 17);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -726,8 +750,8 @@
   .bg-\[\#ffcd6e\] {
     background-color: #ffcd6e;
   }
-  .bg-blue-400 {
-    background-color: var(--color-blue-400);
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
@@ -825,17 +849,41 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
+  }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
+  .px-13 {
+    padding-inline: calc(var(--spacing) * 13);
+  }
   .px-14 {
     padding-inline: calc(var(--spacing) * 14);
   }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
+  .px-\[49\.5px\] {
+    padding-inline: 49.5px;
+  }
+  .px-\[50px\] {
+    padding-inline: 50px;
+  }
+  .px-\[52\] {
+    padding-inline: 52;
+  }
+  .px-\[52px\] {
+    padding-inline: 52px;
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -852,8 +900,14 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .py-7 {
+    padding-block: calc(var(--spacing) * 7);
+  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .py-9 {
+    padding-block: calc(var(--spacing) * 9);
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
@@ -1028,6 +1082,9 @@
   }
   .text-violet-600 {
     color: var(--color-violet-600);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
